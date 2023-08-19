@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #header {
     padding: 100px;
     text-align: center;
@@ -12,45 +13,75 @@ body {
     background-size: cover;
     background-position-y: top; */
 }
+
 .header-hero {
     font-size: 4rem;
     color: #9341d6;
     font-family: 'Lucida Sans';
 }
+
 .para-hero {
     color: #7a7a7a;
 }
+
 #main {
-    padding: 0px 300px;
+    padding: 0px 10%;
 }
+
 .header {
     font-size: 2.5rem;
     padding-bottom: 10px;
     border-bottom: 1px solid #bababa;
 }
+
 .card {
     border: 1px solid #999797;
     border-radius: 15px;
     padding: 10px;
 }
+
 .card:nth-child(n+3) {
     margin-top: 30px;
 }
+
 .header-card {
     font-size: 1.5rem;
     padding-bottom: 5px;
     border-bottom: 1px solid #bababa;
 }
-.list li:not(:last-child){
+
+.list li:not(:last-child) {
     margin-bottom: 20px;
 }
-.link{
+
+.link {
     text-decoration: none;
     color: #2e66ff;
-} .link:hover{text-decoration: underline;}
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:not(:last-child) {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 550px) {
+    .link {
+        display: block;
+        margin-right: auto;
+    }
+
+    .link:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
 #footer {
     margin-top: 50px;
     border-top: 1px solid #bababa;
+    background-color: bisque;
     text-align: center;
     padding: 100px;
 }
